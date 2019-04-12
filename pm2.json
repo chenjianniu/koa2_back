@@ -1,7 +1,7 @@
 {
   "apps": [
     {
-      "name": "koa2_back",
+      "name": "nodejs_koa2_back",
       "script": "npm",
       "args": "start",
       "watch": false,
