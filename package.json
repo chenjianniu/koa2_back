@@ -1,5 +1,5 @@
 {
-  "name": "koa2_back",
+  "name": "nodejs_koa2_back",
   "version": "1.0.0",
   "description": "",
   "main": "./src/server_babel.js",
@@ -18,7 +18,10 @@
       "pre-commit": "lint-staged"
     }
   },
-  "keywords": ["nodejs","koa2"],
+  "keywords": [
+    "nodejs",
+    "koa2"
+  ],
   "author": "chenjian",
   "license": "ISC",
   "dependencies": {
