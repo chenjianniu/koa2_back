@@ -1,0 +1,25 @@
+{
+  "apps": [
+    {
+      "name": "koa2_back",
+      "script": "npm",
+      "args": "start",
+      "watch": false,
+      "env_development": {
+        "NODE_PATH": "./",
+        "PORT": 3001,
+        "NODE_ENV": "development"
+      },
+      "env_staging": {
+        "NODE_PATH": "./",
+        "PORT": 3002,
+        "NODE_ENV": "staging"
+      },
+      "env_production": {
+        "NODE_PATH": "./",
+        "PORT": 3003,
+        "NODE_ENV": "production"
+      }
+    }
+  ]
+}

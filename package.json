@@ -1,0 +1,48 @@
+{
+  "name": "koa2_back",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/server_babel.js",
+  "scripts": {
+    "lol:dev": "nodemon ./src/server_babel.js",
+    "start": "node src/server_babel",
+    "pm2:dev": "pm2 start pm2.json --env development && pm2 save",
+    "pm2:stg": "pm2 start pm2.json --env staging && pm2 save",
+    "pm2:prd": "pm2 start pm2.json --env production && pm2 save",
+    "eslint": "eslint ./src",
+    "test": "echo test && exit 1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "keywords": [],
+  "author": "chenjian",
+  "license": "ISC",
+  "dependencies": {
+    "koa": "^2.7.0",
+    "koa-bodyparser": "^4.2.1",
+    "koa-json": "^2.0.2",
+    "koa-logger": "^3.2.0",
+    "koa-onerror": "^4.1.0",
+    "koa-router": "^7.4.0",
+    "pino": "^5.12.2",
+    "require-dir": "^1.2.0",
+    "socket.io": "^2.2.0",
+    "uuid": "^3.3.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.11.4",
+    "babel-plugin-transform-runtime": "^6.15.0",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-stage-0": "^6.5.0",
+    "eslint": "^5.16.0",
+    "eslint-plugin-prettier": "^3.0.1",
+    "eslint-plugin-react": "^7.12.4",
+    "nodemon": "^1.18.11",
+    "prettier": "^1.16.4",
+    "lint-staged": "^8.1.0"
+  }
+}
