@@ -4,12 +4,13 @@
   "description": "",
   "main": "./src/server_babel.js",
   "scripts": {
-    "lol:dev": "nodemon ./src/server_babel.js",
+    "eslint": "eslint ./src",
     "start": "node src/server_babel",
+    "lol:dev": "NODE_ENV=development nodemon ./src/server_babel.js",
     "pm2:dev": "pm2 start pm2.json --env development && pm2 save",
     "pm2:stg": "pm2 start pm2.json --env staging && pm2 save",
     "pm2:prd": "pm2 start pm2.json --env production && pm2 save",
-    "eslint": "eslint ./src",
+    "git:config": "git config commit.template .git-commit-template",
     "test": "echo test && exit 1"
   },
   "husky": {
@@ -17,7 +18,7 @@
       "pre-commit": "lint-staged"
     }
   },
-  "keywords": [],
+  "keywords": ["nodejs","koa2"],
   "author": "chenjian",
   "license": "ISC",
   "dependencies": {
@@ -46,5 +47,9 @@
     "lint-staged": "^8.1.5",
     "nodemon": "^1.18.11",
     "prettier": "^1.16.4"
+  },
+  "engines": {
+    "node": ">=10.0.0",
+    "npm": ">=6.0.0"
   }
 }
